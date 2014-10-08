@@ -1,6 +1,16 @@
 <?php
 
 require("./archivesetup.conf");
+$dest_username = $_POST['dest_username'];
+$src_password = $_POST['src_password'];
+$src_server = $_POST['src_server'];
+$dest_username = $_POST['dest_username'];
+$dest_password = $_POST['dest_password'];
+$dest_server = $_POST['dest_server'];
+$folder_date = $_POST['folder_date'];
+$inbox_date = $_POST['inbox_date'];
+$delete_src_msg  = $_POST['delete_src_msg '];
+
 
 if (empty($dest_username) || empty($dest_password) || empty($src_username) || empty($src_password) || empty($inbox_date) || empty($folder_date) || empty($delete_src_msg)) {
   print "src_username = $src_username<BR>\n";
